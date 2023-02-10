@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084b457117b7e3d4a84af7d480d76672, type: 3}
+  m_Name: RatData
+  m_EditorClassIdentifier: 
+  commonData: {fileID: 11400000, guid: 48531bcafa595164eab40db7ff4760f8, type: 2}
+  _maxHp: 1
+  _damage: 0
+  _speed: 2
+  _vision: 3
+  _attackRange: 2
+  absorbedStats: 03000000
+  <Name>k__BackingField: Boar

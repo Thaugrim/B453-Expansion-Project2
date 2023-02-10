@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Obstacles
+  - Animals
+  - Humans
+  - Graves
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Tiles BG
+    uniqueID: 376455613
+    locked: 0
+  - name: Tile Static Environment
+    uniqueID: 383664667
+    locked: 0
+  - name: Player
+    uniqueID: 2676056455
+    locked: 0
+  - name: Tiles Collisions
+    uniqueID: 3941627085
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

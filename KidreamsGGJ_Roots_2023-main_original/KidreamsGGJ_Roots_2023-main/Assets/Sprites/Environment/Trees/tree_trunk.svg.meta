@@ -1,0 +1,64 @@
+fileFormatVersion: 2
+guid: e9665588eb53434498d42a01835a2e1a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  svgType: 1
+  texturedSpriteMeshType: 0
+  svgPixelsPerUnit: 50
+  gradientResolution: 100
+  alignment: 0
+  customPivot: {x: 0, y: 0}
+  generatePhysicsShape: 0
+  viewportOptions: 0
+  preserveViewport: 0
+  advancedMode: 0
+  predefinedResolutionIndex: 1
+  targetResolution: 1080
+  resolutionMultiplier: 1
+  stepDistance: 10
+  samplingStepDistance: 100
+  maxCordDeviationEnabled: 0
+  maxCordDeviation: 1
+  maxTangentAngleEnabled: 0
+  maxTangentAngle: 5
+  keepTextureAspectRatio: 1
+  textureSize: 200
+  textureWidth: 256
+  textureHeight: 256
+  wrapMode: 0
+  filterMode: 1
+  sampleCount: 8
+  preserveSVGImageAspect: 0
+  useSVGPixelsPerUnit: 0
+  spriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      name: tree_trunk
+      originalName: 
+      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      border: {x: 0, y: 0, z: 0, w: 0}
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 182
+      spriteID: e24570ff8980ecc448e5b9f3bfac0a59
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 36, y: 57}
+      - {x: -35, y: 59}
+      - {x: -73, y: 50}
+      - {x: -78, y: 71}
+      - {x: -31, y: 71}
+      - {x: -1, y: 91}
+      - {x: 33, y: 70}
+      - {x: 71, y: 61}
+      - {x: 71, y: 50}

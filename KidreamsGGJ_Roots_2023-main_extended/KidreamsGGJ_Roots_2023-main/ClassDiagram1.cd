@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MapManager" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAAAAAEAABAAAAAAAABAAAIAAQABAAAAIAEQ=</HashCode>
+      <FileName>Assets\MapManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreatheMoveAnim" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAEAAABAAABgEAAQAEAIAAgAAIgAAABAAESAA=</HashCode>
+      <FileName>Assets\Scripts\BreatheMoveAnim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonEntityData" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAQAAAYAAI=</HashCode>
+      <FileName>Assets\Scripts\Data\CommonEntityData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EntityData" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgADAAAAgQAAAABEAAAQXAAAQAEAABAAAACABwEA=</HashCode>
+      <FileName>Assets\Scripts\Data\EntityData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerData" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAEQGkABAAACTAAQAAEAiEQIBIgBBEAAUGJAAiBABI=</HashCode>
+      <FileName>Assets\Scripts\Data\PlayerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASEDEAEIFABoAAKAMUAWAmAQEBEBFqYAxoAjAQMBUA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Entity.Animation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EntityDataHolder" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\EntityDataHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EntityNavigation" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASEBAAABCAAEQAAAQAAAAABAAQAAIAIAAACAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\EntityNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpriteDirection" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIASCEACEBAAAAAAAAAAAAAEoAAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Entities\SpriteDirection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodAudioManager" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAACAAgIIAIQFAAAAAAClAAASECAFAAAAgAEA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodAudioManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodFootsteps" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIBAAAgAAAAQAAAADQGAAAAAAAAAgAAAAAAAAAEBA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodFootsteps.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodOcclusion" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAIAAAAAAAAQAAAAAAQACAAAAAAIAkA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodOcclusion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodSfxClass" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgAAAAAAAACAAAAAABEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodSfxClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodSnapshots" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAABEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodSnapshots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FmodSoundGenerator" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgEAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Fmod\FmodSoundGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraManager" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASkAEACAAAAAAAAJAAAAAAAAAAAAAAAQAAAAAJAAEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\CameraManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCQEAgEAAhAEBCBEAgAEAAAEAQACAAEAQIAIgEAAEEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NutoriousSystem" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAAAAAAQAAAACAAAQAAAAIAQAAAQAACAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\NutoriousSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelScriptable" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Map\LevelScriptable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TilesInstantiator" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCAAAAAACAABAAEAAAAAgAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Map\TilesInstantiator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TilesLevelWriter" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAAAAAAABAABAAAAAAAAAAAAAAAAACAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\Map\TilesLevelWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUEZwzkBvAARQAIAiAIBAAJAACAAFRIACAAgSAA+EA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VampireLordController" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Player\VampireLordController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Extensions.MiscExtensions" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Extensions\MiscExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Extensions.TransformExtensions" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAABAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Extensions\TransformExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.InputSystem.@PlayerControls" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAACAAABAiAAKEGRAJYAYXBGAUAGMgIFhQAIA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerControls.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="tileData" Collapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Map\LevelScriptable.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="EntityType" Collapsed="true">
+    <Position X="6" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\Data\EntityData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FaceDirection" Collapsed="true">
+    <Position X="7.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GameStates" Collapsed="true">
+    <Position X="9.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PlayerStates" Collapsed="true">
+    <Position X="11.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

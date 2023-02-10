@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5707917979217978605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5707917979217978607}
+  - component: {fileID: 5707917979217978604}
+  - component: {fileID: 1541899359}
+  - component: {fileID: 1554731876}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5707917979217978607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707917979217978605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5707917979217978604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707917979217978605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c497a6361bf4f6645abf32638a8a6f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bloodAmount: 25
+  _deathCount: 0
+  _graveDirt: {fileID: 5103932439226165397, guid: fd88900a6bdee4c46962ca668b8ded6b, type: 3}
+  _graveTomb: {fileID: 588759372161031256, guid: b89d12f023bf6a7458c7b24c9e462483, type: 3}
+  _playerPrefab: {fileID: 1336632897603560555, guid: a8b34539a6372964c81e821966553517, type: 3}
+  _currentVampireLord: {fileID: 0}
+  _playerController: {fileID: 0}
+  _vampireLordController: {fileID: 0}
+  _playerSpawn: {fileID: 0}
+  _vampireLordSpawn: {fileID: 0}
+  _engraved: []
+  _chosenEngraved: {fileID: 0}
+  _allEntities: []
+  _underworldOverlay: {fileID: 1541899359}
+  _debugPlayerLoop: 1
+--- !u!114 &1541899359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707917979217978605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2342085deca6c504dbfa8724f491b0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _underworldOverlayMaterial: {fileID: 2100000, guid: 67fe5a17e5de91646a855f0cba69352f, type: 2}
+  _transition1Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  _noiseBlend1: 1
+  _animDuration1: 2
+  _midAnimDelay: 0.5
+  _underworldColor: {r: 0.38679248, g: 0.32986832, b: 0.32986832, a: 1}
+  _noiseBlend2: 0.13
+  _animDuration2: 2
+--- !u!114 &1554731876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707917979217978605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cc387f9bec624c80a411c343d1141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nutoriousPoints: 7
+  spawnMilestones: 030000000500000007000000090000000b0000000d0000000f0000001200000014000000
+  entityToSpawn: {fileID: 1441523706504311932, guid: 8294c64e0af890345abc43e41e1c5b33, type: 3}
+  mapManager: {fileID: 0}

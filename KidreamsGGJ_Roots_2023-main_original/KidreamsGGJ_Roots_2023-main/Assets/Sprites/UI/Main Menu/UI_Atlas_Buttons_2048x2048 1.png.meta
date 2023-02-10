@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: eeb64d8488a187d42824692a2802a627
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_0
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1419
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a63ceaa38aeffa4ea9b3f1ab60bb239
+      internalID: 346229589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_1
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1419
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10ae5bd917243f47a94ecb7fb11caf7
+      internalID: -1105921253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_2
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1419
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e3dcb08acc3b24bb4f5eae65ddace8
+      internalID: -943262915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1245
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4658bcb79389742468545813ef9255f3
+      internalID: -717721731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_4
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1245
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113a53a3218018643819f6afb26ab2df
+      internalID: 1433952299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_5
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1245
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824c5aaabf262884992af059b8c233ef
+      internalID: 859027069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1068
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd97c754bce46f744bce972cf3af7811
+      internalID: -679611908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_7
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1068
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2b641c49f457f4386f88668df1cfca
+      internalID: -1840516458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_8
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1067
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d746e1acc4102aa4b9b35063509987bc
+      internalID: 1143586567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 821
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da85b0d7587931468b81097590e41a8
+      internalID: 1694539945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_10
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 821
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acbb1b1039a2f842b088e77a8a4fcbf
+      internalID: -1852825094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_11
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 820
+        width: 511
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6182c09c932ca429d758a11d78bf73
+      internalID: 1931140155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 644
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bc51fc2bbd7fc418efe8b18e7bb861
+      internalID: -1072837342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_13
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 643
+        width: 512
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cab7aaf506bf946b61f022edc68180
+      internalID: -434600204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_14
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 643
+        width: 511
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dc9c0dfd313144aa7b5f85fa82a5d4
+      internalID: -1523812617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 468
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131826c29dad83740aac5f03e025377c
+      internalID: -334249750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_16
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 468
+        width: 512
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46c3ebc3abfae449931a7010b385e6e
+      internalID: 1143813333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Atlas_Buttons_2048x2048 1_17
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 468
+        width: 511
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987d87fd9e1208942a1def5a94e869b3
+      internalID: -220305217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_Atlas_Buttons_2048x2048 1_2: -943262915
+      UI_Atlas_Buttons_2048x2048 1_12: -1072837342
+      UI_Atlas_Buttons_2048x2048 1_11: 1931140155
+      UI_Atlas_Buttons_2048x2048 1_1: -1105921253
+      UI_Atlas_Buttons_2048x2048 1_15: -334249750
+      UI_Atlas_Buttons_2048x2048 1_7: -1840516458
+      UI_Atlas_Buttons_2048x2048 1_14: -1523812617
+      UI_Atlas_Buttons_2048x2048 1_3: -717721731
+      UI_Atlas_Buttons_2048x2048 1_0: 346229589
+      UI_Atlas_Buttons_2048x2048 1_4: 1433952299
+      UI_Atlas_Buttons_2048x2048 1_10: -1852825094
+      UI_Atlas_Buttons_2048x2048 1_13: -434600204
+      UI_Atlas_Buttons_2048x2048 1_6: -679611908
+      UI_Atlas_Buttons_2048x2048 1_9: 1694539945
+      UI_Atlas_Buttons_2048x2048 1_16: 1143813333
+      UI_Atlas_Buttons_2048x2048 1_5: 859027069
+      UI_Atlas_Buttons_2048x2048 1_17: -220305217
+      UI_Atlas_Buttons_2048x2048 1_8: 1143586567
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
