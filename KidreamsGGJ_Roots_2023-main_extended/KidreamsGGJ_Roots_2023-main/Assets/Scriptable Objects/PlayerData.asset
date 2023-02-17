@@ -15,8 +15,9 @@ MonoBehaviour:
   commonData: {fileID: 11400000, guid: 48531bcafa595164eab40db7ff4760f8, type: 2}
   _maxHp: 10
   _damage: 10
-  _speed: 2
+  _speed: 4
   _vision: 1
+  _mana: 100
   _attackRange: 3
   absorbedStats: 
   <Name>k__BackingField: Player

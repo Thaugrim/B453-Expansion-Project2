@@ -26,9 +26,11 @@ public class PlayerController : MonoBehaviour
 
     // TODO: Set kills/absorption absorbed entity when bite person / resurrect from grave
     [ShowNativeProperty] public int Hp => StatHelper.GetHp(_data, _damageTaken, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
+    [ShowNativeProperty] public int Mana => StatHelper.GetHp(_data, _damageTaken, _killedEntitiesData, AbsorbedEntity, _data.CommonData);  // Added for Spell Casting
     //[ShowNativeProperty] public int Damage => StatHelper.GetDamage(_data, _killedEntities, AbsorbedEntity, _data.CommonData);
     [ShowNativeProperty] public int Speed => StatHelper.GeSpeed(_data, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
     [ShowNativeProperty] public int Vision => StatHelper.GetVision(_data, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
+
     
     private int _currentStrongValue => Hp + Speed + Vision;
 

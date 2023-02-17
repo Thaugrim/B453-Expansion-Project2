@@ -21,7 +21,7 @@ public class PlayerData : EntityData
     public float MoveToTargetDurationWhileWeak => _moveToTargetDurationWhileWeak;
     public float MoveToTargetDurationWhileStrong => _moveToTargetDurationWhileStrong;
 
-    [SerializeField] private float _moveToTargetDurationWhileWeak = 1.25f, _moveToTargetDurationWhileStrong = 1f;
+    [SerializeField] private float _moveToTargetDurationWhileWeak = 1.25f, _moveToTargetDurationWhileStrong = 1f;  // 1.25f, 1f
     public float MoveBackFromTargetDurationWhileWeak => _moveBackFromTargetDurationWhileWeak;
     public float MoveBackFromTargetDurationWhileStrong => _moveBackFromTargetDurationWhileStrong;
 

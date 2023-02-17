@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance => (_instance ??= FindObjectOfType<UIManager>());
 
     [SerializeField] private GameObject _gravesParent, _heartsParent;
-    [SerializeField] private Transform _bloodFill;
+    [SerializeField] private Transform _bloodFill, _manaFill;
 
     private void Awake()
     {
@@ -21,12 +21,14 @@ public class UIManager : MonoBehaviour
         UpdateHearts();
         UpdateGraves();
         UpdateBlood();
+        UpdateMana(); // Added for spellcasting resource
     }
     public void InitializePlayerUI(PlayerController pc)
     {
         UpdateHearts(pc);
         UpdateGraves();
         UpdateBlood(pc);
+        UpdateMana(pc);
     }
     public void UpdateHearts()
     {
@@ -75,5 +77,25 @@ public class UIManager : MonoBehaviour
         float bloodFillHeightPerBloodPoint = (float)pc.Hp / 10; // 10 = maxBlood;
 
         _bloodFill.localScale = new Vector3(_bloodFill.localScale.x, bloodFillHeightPerBloodPoint, _bloodFill.localScale.z);
+    }
+
+    /* 
+     * 
+     *   ADDED FUNCTIONS FOR UI UPDATE
+     *  
+     */
+
+    public void UpdateMana()  // Added for spellcast resource
+    {
+        float bloodFillHeightPerManaPoint = (float)GameManager.Instance.PlayerController.Mana / 10; // Max mana will be 100
+
+        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _bloodFill.localScale.z);
+    }
+
+    public void UpdateMana(PlayerController pc) // Added for spellcast resource
+    {
+        float bloodFillHeightPerManaPoint = (float)pc.Mana / 10; // Max mana will be 100
+
+        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _bloodFill.localScale.z);
     }
 }

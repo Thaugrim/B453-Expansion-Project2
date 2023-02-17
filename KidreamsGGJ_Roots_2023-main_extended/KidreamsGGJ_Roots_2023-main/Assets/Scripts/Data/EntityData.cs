@@ -17,6 +17,7 @@ public class EntityData : ScriptableObject
         Damage,
         Speed,
         Vision,
+        Mana,   // Added for mana resource spell casting
     }
     [ValidateInput(nameof(ValidateNotNull))]
     [SerializeField, Expandable] private CommonEntityData commonData;
@@ -25,6 +26,7 @@ public class EntityData : ScriptableObject
     [SerializeField] private int _damage;
     [SerializeField] private int _speed;
     [SerializeField] private int _vision;
+    [SerializeField] private int _mana;    // Added for spellcasting resource
     [SerializeField] private float _attackRange;
 
     [SerializeField] private Stat[] absorbedStats;
@@ -36,6 +38,7 @@ public class EntityData : ScriptableObject
     public int PlayerSpeed => _speed;
     public int EntitySpeed => Mathf.FloorToInt(_speed * commonData.EntitySpeedModifier);
     public int Vision => _vision;
+    public int Mana => _mana;      // Added for spellcasting resource
     public float AttackRange => _attackRange;
     public Stat[] AbsorbedStats => absorbedStats;
     public CommonEntityData CommonData => commonData;
@@ -75,6 +78,7 @@ public class EntityData : ScriptableObject
             Stat.Damage => Damage,
             Stat.Speed => PlayerSpeed,
             Stat.Vision => Vision,
+            Stat.Mana => Mana,  // Added for mana spellcasting
             _ => throw new ArgumentOutOfRangeException(nameof(stat), stat, null)
         };
     }
