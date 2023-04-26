@@ -36,7 +36,10 @@ public class GraveTomb : MonoBehaviour
 
     private bool CheckGravePosInAir()
     {
-        bool isGraveInAir = GameManager.Instance.NewGraveDirt.transform.position.y <= transform.position.y ? true : false;
+        bool isGraveInAir = true;
+        
+        if(GameManager.Instance.NewGraveDirt != null)
+            isGraveInAir = GameManager.Instance.NewGraveDirt.transform.position.y <= transform.position.y ? true : false;
         return isGraveInAir;
     }
     private void Engrave()
@@ -49,7 +52,8 @@ public class GraveTomb : MonoBehaviour
 
         _rb.gravityScale = 0;
         _rb.velocity = Vector3.zero;
-        transform.position = GameManager.Instance.NewGraveDirt.transform.position + new Vector3(0f, _offsetFromDirtY, 0f);
+        if(GameManager.Instance.NewGraveDirt != null)
+            transform.position = GameManager.Instance.NewGraveDirt.transform.position + new Vector3(0f, _offsetFromDirtY, 0f);
         GameManager.Instance.Engraved.Add(_engravedVillagerData);
     }
 }

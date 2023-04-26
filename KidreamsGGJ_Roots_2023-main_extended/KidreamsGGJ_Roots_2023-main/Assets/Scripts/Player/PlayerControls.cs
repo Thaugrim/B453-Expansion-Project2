@@ -55,6 +55,15 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cast"",
+                    ""type"": ""Button"",
+                    ""id"": ""8dc44928-65d1-413e-847c-ea8fdcafaa14"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -275,6 +284,17 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Bite"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7a691d09-c7a1-4962-b397-e31debcfe545"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Cast"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -865,6 +885,7 @@ namespace UnityEngine.InputSystem
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
             m_Player_Bite = m_Player.FindAction("Bite", throwIfNotFound: true);
+            m_Player_Cast = m_Player.FindAction("Cast", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -939,6 +960,7 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_Look;
         private readonly InputAction m_Player_Bite;
+        private readonly InputAction m_Player_Cast;
         public struct PlayerActions
         {
             private @PlayerControls m_Wrapper;
@@ -946,6 +968,7 @@ namespace UnityEngine.InputSystem
             public InputAction @Move => m_Wrapper.m_Player_Move;
             public InputAction @Look => m_Wrapper.m_Player_Look;
             public InputAction @Bite => m_Wrapper.m_Player_Bite;
+            public InputAction @Cast => m_Wrapper.m_Player_Cast;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -964,6 +987,9 @@ namespace UnityEngine.InputSystem
                     @Bite.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBite;
                     @Bite.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBite;
                     @Bite.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBite;
+                    @Cast.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
+                    @Cast.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
+                    @Cast.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -977,6 +1003,9 @@ namespace UnityEngine.InputSystem
                     @Bite.started += instance.OnBite;
                     @Bite.performed += instance.OnBite;
                     @Bite.canceled += instance.OnBite;
+                    @Cast.started += instance.OnCast;
+                    @Cast.performed += instance.OnCast;
+                    @Cast.canceled += instance.OnCast;
                 }
             }
         }
@@ -1136,6 +1165,7 @@ namespace UnityEngine.InputSystem
             void OnMove(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
             void OnBite(InputAction.CallbackContext context);
+            void OnCast(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

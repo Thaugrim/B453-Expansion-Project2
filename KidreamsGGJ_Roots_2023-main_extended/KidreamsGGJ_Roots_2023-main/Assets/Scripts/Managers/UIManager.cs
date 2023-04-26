@@ -89,13 +89,13 @@ public class UIManager : MonoBehaviour
     {
         float bloodFillHeightPerManaPoint = (float)GameManager.Instance.PlayerController.Mana / 10; // Max mana will be 100
 
-        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _bloodFill.localScale.z);
+        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _manaFill.localScale.z);
     }
 
     public void UpdateMana(PlayerController pc) // Added for spellcast resource
     {
         float bloodFillHeightPerManaPoint = (float)pc.Mana / 10; // Max mana will be 100
 
-        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _bloodFill.localScale.z);
+        _manaFill.localScale = new Vector3(_manaFill.localScale.x, bloodFillHeightPerManaPoint, _manaFill.localScale.z);
     }
 }

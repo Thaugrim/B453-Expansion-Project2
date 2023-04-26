@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _bloodAmount = 25;
     public int BloodAmount => _bloodAmount;
 
+    [SerializeField] private int _manaAmount = 100;  // Added
+    public int ManaAmount => _manaAmount;
+
     [SerializeField] private int _deathCount = 0;
     public int DeathCount { get => _deathCount; set => _deathCount = value; }
 

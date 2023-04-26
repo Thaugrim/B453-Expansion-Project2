@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: da2d203f04d010942b3ce856a5330270, type: 2}
     - target: {fileID: 6144957634684898835, guid: 29797eeba4e804047a25c9de93e7fbcf, type: 3}
       propertyPath: m_Name
-      value: Villiger_PrefabBase
+      value: Villiger_Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6144957634684898836, guid: 29797eeba4e804047a25c9de93e7fbcf, type: 3}
       propertyPath: m_RootOrder

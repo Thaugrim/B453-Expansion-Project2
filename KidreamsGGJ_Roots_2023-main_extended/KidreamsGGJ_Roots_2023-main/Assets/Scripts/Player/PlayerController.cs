@@ -7,7 +7,7 @@ using NaughtyAttributes;
 using UnityEngine.EventSystems;
 using System;
 
-public enum PlayerStates { Idle, Moving, Attacking, Biting, Eating, FailedBiting }
+public enum PlayerStates { Idle, Moving, Attacking, Biting, Eating, FailedBiting, Casting }
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     // TODO: Set kills/absorption absorbed entity when bite person / resurrect from grave
     [ShowNativeProperty] public int Hp => StatHelper.GetHp(_data, _damageTaken, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
-    [ShowNativeProperty] public int Mana => StatHelper.GetHp(_data, _damageTaken, _killedEntitiesData, AbsorbedEntity, _data.CommonData);  // Added for Spell Casting
+    [ShowNativeProperty] public int Mana => StatHelper.GetHp(_data, _manaSpent, _killedEntitiesData, AbsorbedEntity, _data.CommonData);  // Added for Spell Casting
     //[ShowNativeProperty] public int Damage => StatHelper.GetDamage(_data, _killedEntities, AbsorbedEntity, _data.CommonData);
     [ShowNativeProperty] public int Speed => StatHelper.GeSpeed(_data, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
     [ShowNativeProperty] public int Vision => StatHelper.GetVision(_data, _killedEntitiesData, AbsorbedEntity, _data.CommonData);
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public EntityData AbsorbedEntity;
     private readonly List<EntityData> _killedEntitiesData = new();
     private int _damageTaken; // separated from hp so we can calculate Absorbed enitty separately
+    private int _manaSpent;
 
     // TODO: Test (stats work + with absorbed entity)
 
@@ -155,6 +156,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    protected virtual void Cast(InputAction.CallbackContext castContext)
+    {
+
+    }
+
     #region States
     protected void Idle()
     {
@@ -269,6 +275,12 @@ public class PlayerController : MonoBehaviour
         transform.DOMoveX(_lastAttackingOriginPos.x, _moveBackFromTargetDuration).SetEase(_data.MoveBackFromTargetCurveFailedBite).
             OnComplete(() => ChangeState(PlayerStates.Idle));
     }
+
+    private void Casting()
+    {
+        Debug.Log("I'm casting!");
+        ChangeState(PlayerStates.Idle);
+    }
     #endregion
 
     private void TryChangeWeakness()
@@ -359,6 +371,9 @@ public class PlayerController : MonoBehaviour
             case PlayerStates.FailedBiting:
                 _playerState = FailedBiting;
                 break;
+            case PlayerStates.Casting:
+                _playerState = Casting;
+                break;
         }
     }
 
@@ -387,6 +402,16 @@ public class PlayerController : MonoBehaviour
 
         isAlive = false;
         return isAlive;
+    }
+
+    public bool UseMana()  // Added
+    {
+        if (Mana > 10)
+        {
+            _manaSpent += 10;
+            return true;
+        }
+        return false;
     }
 
     private void OnDrawGizmos()

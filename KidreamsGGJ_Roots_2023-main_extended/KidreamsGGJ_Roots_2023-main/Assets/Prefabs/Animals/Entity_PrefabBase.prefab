@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa2f9a2a39f152449b06e5a05d85ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   _anim: {fileID: 8154517945007613275}
   moveStaggerAnim: {fileID: 3396881238886378742}
   _playerRaycastMask:
@@ -199,7 +200,6 @@ MonoBehaviour:
   _testRayColor: {r: 1, g: 0, b: 0.5372549, a: 0}
   _startNavMode: 1
   _entityDebug: 0
-  _dataHolder: {fileID: 6144957634684898833}
   _villigerGraphics: {fileID: 800674697070924778}
   _tombInstansiationOffsetY: 10
   _tombOffsetY: 3.25
@@ -230,7 +230,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

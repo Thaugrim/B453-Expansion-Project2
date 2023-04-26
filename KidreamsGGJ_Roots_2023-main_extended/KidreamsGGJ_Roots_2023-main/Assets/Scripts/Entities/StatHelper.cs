@@ -10,6 +10,9 @@ public static class StatHelper
     public static int GetHp(PlayerData myData, int damageTaken, IEnumerable<EntityData> killedEntities, EntityData absorbedEntity, CommonEntityData commonData)
         => GetStatAbsorbed(myData.Hp, killedEntities, absorbedEntity, commonData, EntityData.Stat.Hp) - damageTaken;
 
+    public static int GetMana(PlayerData myData, int manaSpent, IEnumerable<EntityData> killedEntities, EntityData absorbedEntity, CommonEntityData commonData)
+        => GetStatAbsorbed(myData.Mana, killedEntities, absorbedEntity, commonData, EntityData.Stat.Mana) - manaSpent;
+
     public static int GetSpeed(PlayerData myData, IEnumerable<EntityData> killedEntities, EntityData absorbedEntity, CommonEntityData commonData)
         => GetStatAbsorbed(myData.PlayerSpeed, killedEntities, absorbedEntity, commonData, EntityData.Stat.Speed);
 
