@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private float _maxDistance;
-    
+    // Art https://opengameart.org/content/cartoon-fireball-1600x1600-png
 
-    Vector3 originalPos, target;
+    [SerializeField] private float _speed;
+    
     Rigidbody2D rb;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        originalPos = transform.position;
-        
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         rb.AddForce(transform.up * _speed);
@@ -25,7 +21,14 @@ public class Fireball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision != null)
+        if(collision.transform.gameObject.layer == LayerMask.NameToLayer("Animals"))
+        {
+            collision.transform.root.gameObject.SetActive(false);
+            Debug.Log("Hit Animal!");
+        }
+
+        if (collision != null)
             Destroy(gameObject);
+
     }
 }

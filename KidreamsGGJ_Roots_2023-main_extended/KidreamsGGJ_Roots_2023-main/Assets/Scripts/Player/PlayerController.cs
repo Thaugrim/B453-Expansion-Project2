@@ -92,7 +92,8 @@ public class PlayerController : MonoBehaviour
             if (UseMana())
             {
                 GameObject fireball = Instantiate(_fireballPrefab, transform.position, Quaternion.identity);
-                Vector3 rot = Camera.main.WorldToViewportPoint(Input.mousePosition) - transform.position;
+
+                Vector3 rot = (Camera.main.ScreenToWorldPoint((Vector3)Mouse.current.position.ReadValue()) - transform.position);
                 rot.z = 0;
 
                 fireball.transform.up = rot;
