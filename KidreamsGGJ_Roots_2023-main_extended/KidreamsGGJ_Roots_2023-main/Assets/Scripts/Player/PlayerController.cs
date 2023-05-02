@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Player Data")]
     [SerializeField, Expandable] private PlayerData _data;
+    public float mana = 100;
     public PlayerData Data { get => _data; set => _data = value; }
 
     private bool _isWeak;
@@ -53,6 +54,9 @@ public class PlayerController : MonoBehaviour
     [Header("World Data")]
     [SerializeField] private LayerMask _biteLayer;
 
+    [Header("Prefab Spellcasting")]
+    [SerializeField] private GameObject _fireballPrefab;
+
     private Entity _lastPrey;
     private Vector2 _lastAttackingOriginPos, _lastTargetPos;
     private int _hpStatCounter = 0, _speedStatCounter = 0, _visionStatCounter = 0, _animationCounter = 0, _animationLenghtInFrames = 3; //_killCounterTest = 0;
@@ -83,6 +87,23 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _playerState.Invoke();
+        if(Input.GetMouseButtonUp(0))
+        {
+            if (UseMana())
+            {
+                GameObject fireball = Instantiate(_fireballPrefab, transform.position, Quaternion.identity);
+                Vector3 rot = Camera.main.WorldToViewportPoint(Input.mousePosition) - transform.position;
+                rot.z = 0;
+
+                fireball.transform.up = rot;
+            }
+        }
+
+        if(mana < 100)
+        {
+            mana += 3f * Time.deltaTime;
+            UIManager.Instance.UpdateMana(mana);
+        }
     }
     private void FixedUpdate()
     {
@@ -158,14 +179,14 @@ public class PlayerController : MonoBehaviour
 
     protected virtual void Cast(InputAction.CallbackContext castContext)
     {
-
+        Debug.Log("Casting from Callback");
     }
 
     #region States
     protected void Idle()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state is Idle");
+            //Debug.Log($"player state is Idle");
 
         //_killCounterTest = 0;
         _moveInput = _move.ReadValue<Vector2>();
@@ -180,7 +201,7 @@ public class PlayerController : MonoBehaviour
     protected void Moving()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state is Moving");
+            //Debug.Log($"player state is Moving");
 
         _moveInput = _move.ReadValue<Vector2>();
         DoMovingAnimation();
@@ -191,7 +212,7 @@ public class PlayerController : MonoBehaviour
     private void Attacking()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state is Attacking");
+            //Debug.Log($"player state is Attacking");
 
         _moveInput = Vector2.zero;
         DoAttackAnimation();
@@ -208,7 +229,7 @@ public class PlayerController : MonoBehaviour
     private void Biting()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state is Biting");
+            //Debug.Log($"player state is Biting");
 
         _moveInput = Vector2.zero;
         DoBiteAnimation();
@@ -244,7 +265,7 @@ public class PlayerController : MonoBehaviour
     private void Eating()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state is Eating");
+            //Debug.Log($"player state is Eating");
 
         _moveInput = Vector2.zero;
         DoEatingAnimation();
@@ -268,7 +289,7 @@ public class PlayerController : MonoBehaviour
     private void FailedBiting()
     {
         if (_debugPlayerState)
-            Debug.Log($"player state tried to Bite and failed");
+            //Debug.Log($"player state tried to Bite and failed");
 
         _moveInput = Vector2.zero;
 
@@ -404,15 +425,19 @@ public class PlayerController : MonoBehaviour
         return isAlive;
     }
 
-    public bool UseMana()  // Added
+    public bool UseMana()  // Added for spellcasting
     {
-        if (Mana > 10)
+        if (mana > 10)
         {
-            _manaSpent += 10;
+            mana -= 10;
+            UIManager.Instance.UpdateMana(mana);
             return true;
         }
+
         return false;
     }
+
+
 
     private void OnDrawGizmos()
     {

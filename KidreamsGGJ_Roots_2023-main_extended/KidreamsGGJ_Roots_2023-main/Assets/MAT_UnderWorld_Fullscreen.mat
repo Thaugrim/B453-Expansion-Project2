@@ -40,13 +40,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _Blend: 1
+    - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
     - _Darken: 0.48
     - _DstBlend: 0
     - _GreyscaleBlend: 0.7
-    - _NoiseBlend: 0.13
+    - _NoiseBlend: 1
     - _NoiseChangeSpeed: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -56,7 +56,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.38679248, g: 0.32986832, b: 0.32986832, a: 1}
+    - _Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4280847236693951882
 MonoBehaviour:

@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _bloodAmount = 25;
     public int BloodAmount => _bloodAmount;
 
-    [SerializeField] private int _manaAmount = 100;  // Added
+    [SerializeField] private int _manaAmount = 100;  // Added for spellcasting
     public int ManaAmount => _manaAmount;
 
     [SerializeField] private int _deathCount = 0;
@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         _gameState.Invoke();
+
+        //Debug.Log("WorldtoView Mouse Pos: " + Camera.main.WorldToViewportPoint(Input.mousePosition));
     }
     private void OnDisable()
     {
